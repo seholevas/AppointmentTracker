@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppointmentsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="10.0" prefWidth="197.33334350585938" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.9999694824219" minWidth="10.0" prefWidth="402.6666564941406" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="352.6666564941406" minHeight="10.0" prefHeight="352.6666564941406" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="195.33334350585938" minHeight="10.0" prefHeight="47.333343505859375" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <DatePicker fx:id="datepickerPicked" disable="true" editable="false" maxWidth="-Infinity" prefWidth="150.0" promptText="PICK A DATE">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </DatePicker>
+            <ComboBox fx:id="comboboxStartTime" disable="true" maxWidth="-Infinity" prefWidth="150.0" promptText="START TIME">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="comboboxEndTime" disable="true" maxWidth="-Infinity" prefWidth="150.0" promptText="END TIME">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="comboboxType" disable="true" maxWidth="-Infinity" prefWidth="150.0" promptText="TYPE">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="comboboxCustomerName" disable="true" prefWidth="150.0" promptText="CUSTOMER NAME" />
+            <ComboBox fx:id="comboboxConsultantName" disable="true" prefWidth="150.0" promptText="CONSULTANT NAME" />
+            <TextField fx:id="txtCustomerID" alignment="CENTER" disable="true" editable="false" maxWidth="-Infinity" prefWidth="150.0" promptText="CUSTOMER ID">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtContact" alignment="CENTER" maxWidth="-Infinity" prefWidth="150.0" promptText="CONTACT">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtLocation" alignment="CENTER" maxWidth="-Infinity" prefWidth="150.0" promptText="LOCATION">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtTitle" alignment="CENTER" maxWidth="-Infinity" prefWidth="150.0" promptText="TITLE">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtDescription" alignment="CENTER" maxWidth="-Infinity" prefWidth="150.0" promptText="DESCRIPTION">
+               <VBox.margin>
+                  <Insets bottom="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <TableView fx:id="tableAppointments" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+        <columns>
+          <TableColumn fx:id="columnStart" prefWidth="75.66668701171875" text="START" />
+            <TableColumn fx:id="columnEnd" prefWidth="75.33331298828125" text="END" />
+          <TableColumn fx:id="columnDate" prefWidth="59.33331298828125" text="DATE" />
+            <TableColumn fx:id="columnLocation" prefWidth="68.0" text="LOCATION" />
+            <TableColumn fx:id="columnTitle" prefWidth="44.0" text="TITLE" />
+            <TableColumn fx:id="columnDescription" prefWidth="86.0" text="DESCRIPTION" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#actionEditButtonPressed" prefHeight="10.0" prefWidth="150.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EDIT" size="25" text="" textAlignment="CENTER" />
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#actionAddButtonPressed" prefHeight="10.0" prefWidth="150.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" size="25" textAlignment="CENTER" />
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#actionDeleteButtonPressed" prefHeight="10.0" prefWidth="150.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="MINUS" size="25" textAlignment="CENTER" />
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="152.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <children>
+            <Button fx:id="btnSave" disable="true" mnemonicParsing="false" onAction="#actionSaveButtonPressed" prefWidth="100.0">
+               <graphic>
+                  <FontAwesomeIconView glyphName="SAVE" size="25" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCancel" disable="true" mnemonicParsing="false" onAction="#actionCancelButtonPressed" prefWidth="100.0">
+               <graphic>
+                  <Icons525View glyphName="CANCEL" size="25" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

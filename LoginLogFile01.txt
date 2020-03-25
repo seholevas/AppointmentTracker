@@ -1,0 +1,4 @@
+Oct 31, 2019 12:04:19 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 12:23:24 PM controllers.LoginController checkUserExists
+INFO: seh logged in

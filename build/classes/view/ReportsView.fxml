@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="APPOINTMENT TYPES BY MONTH">
+               <content>
+                  <TableView fx:id="tableAppointmentsByMonth" prefHeight="393.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="columnMonth1" prefWidth="223.66668701171875" text="MONTH" />
+                        <TableColumn fx:id="columnType1" prefWidth="175.0" text="TYPE" />
+                        <TableColumn fx:id="columnNumber1" prefWidth="202.0" text="NUMBER" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab text="APPOINTMENT TYPES LOCATION">
+               <content>
+                  <TableView fx:id="tableAppointmentsByLocation" prefHeight="393.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="columnLocation2" prefWidth="520.0" text="LOCATION" />
+                        <TableColumn fx:id="columnNumber2" text="NUMBER" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+          <Tab text="CONSULTANT'S APPOINTMENTS">
+               <content>
+                  <TableView fx:id="tableConsultantsAppointments" prefHeight="393.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="columnDate3" prefWidth="104.33334350585938" text="DATE" />
+                        <TableColumn fx:id="columnStart3" prefWidth="101.66665649414062" text="START" />
+                        <TableColumn fx:id="columnEnd3" prefWidth="94.33331298828125" text="END" />
+                        <TableColumn fx:id="columnCustomer3" prefWidth="135.0" text="CUSTOMER" />
+                        <TableColumn fx:id="columnType3" prefWidth="167.0" text="TYPE" />
+                     </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>

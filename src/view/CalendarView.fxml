@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CalendarController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="536.6666259765625" minWidth="10.0" prefWidth="421.66668701171875" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="353.33331298828125" minHeight="10.0" prefHeight="352.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="401.0" prefWidth="610.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="UPCOMING WEEK">
+               <content>
+                  <TableView fx:id="tableWeek" prefHeight="365.0" prefWidth="574.0">
+                     <columns>
+                        <TableColumn fx:id="columnDate1" prefWidth="61.333343505859375" text="DATE" />
+                        <TableColumn fx:id="columnStartTime1" prefWidth="45.0" text="START" />
+                        <TableColumn fx:id="columnEndTime1" prefWidth="47.3333740234375" text="END" />
+                        <TableColumn fx:id="columnID1" minWidth="0.0" prefWidth="40.0" text="ID" />
+                        <TableColumn fx:id="columnCustomer1" minWidth="0.0" prefWidth="99.0" text="CUSTOMER" />
+                        <TableColumn fx:id="columnLocation1" minWidth="0.0" prefWidth="90.3333740234375" text="LOCATION" />
+                        <TableColumn fx:id="columnType1" minWidth="0.0" prefWidth="66.3333740234375" text="TYPE" />
+                        <TableColumn fx:id="columnDescription1" minWidth="0.0" prefWidth="92.6666259765625" text="DESCRIPTION" />
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+          <Tab text="UPCOMING MONTH">
+               <content>
+                  <TableView fx:id="tableMonth" prefHeight="365.0" prefWidth="574.0">
+                     <columns>
+                        <TableColumn fx:id="columnDate2" prefWidth="61.333343505859375" text="DATE" />
+                        <TableColumn fx:id="columnStartTime2" prefWidth="45.0" text="START" />
+                        <TableColumn fx:id="columnEndTime2" prefWidth="47.3333740234375" text="END" />
+                        <TableColumn fx:id="columnID2" minWidth="0.0" prefWidth="40.0" text="ID" />
+                        <TableColumn fx:id="columnCustomer2" minWidth="0.0" prefWidth="83.0" text="CUSTOMER" />
+                        <TableColumn fx:id="columnLocation2" minWidth="0.0" prefWidth="107.0" text="LOCATION" />
+                        <TableColumn fx:id="columnType2" minWidth="0.0" prefWidth="52.0" text="TYPE" />
+                        <TableColumn fx:id="columnDescription2" minWidth="0.0" prefWidth="109.0" text="DESCRIPTION" />
+                     </columns>
+                  </TableView>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>

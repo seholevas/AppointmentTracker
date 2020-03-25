@@ -1,0 +1,74 @@
+Oct 31, 2019 12:27:26 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 12:37:51 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 1:10:23 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 1:44:06 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 1:58:08 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Oct 31, 2019 2:38:11 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 2:40:30 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Oct 31, 2019 2:55:19 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Oct 31, 2019 3:45:18 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 3:54:19 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 4:24:05 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 4:27:35 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 4:34:02 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 4:41:31 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 4:50:08 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 5:11:00 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Oct 31, 2019 5:20:25 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 10:50:53 AM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 10:53:12 AM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 11:00:06 AM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 11:30:22 AM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 11:42:38 AM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:00:13 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:01:19 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:09:49 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:21:15 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:24:35 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:24:56 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Nov 01, 2019 12:29:24 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Nov 01, 2019 12:31:27 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Nov 01, 2019 12:34:30 PM controllers.LoginController checkUserExists
+INFO: admin logged in
+Nov 01, 2019 12:34:47 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:35:35 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:36:28 PM controllers.LoginController checkUserExists
+INFO: seh logged in
+Nov 01, 2019 12:38:39 PM controllers.LoginController checkUserExists
+INFO: ts logged in
+Nov 01, 2019 12:39:09 PM controllers.LoginController checkUserExists
+INFO: ts logged in
+Nov 01, 2019 12:41:15 PM controllers.LoginController checkUserExists
+INFO: ts logged in
